@@ -15,7 +15,7 @@
 <body>
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg bg-dark text-white p-3">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="../index.html">
             <img src="../assets/Logo Principal.png" alt="Logotipo de Kalandra" width="auto" height="120" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,10 +24,10 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-white" href="index.html">Inicio</a>
+              <a class="nav-link text-white" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="pages/contacto.html">Contacto</a>
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
             </li>
           </ul>
           <span class="navbar-text">
@@ -39,18 +39,50 @@
       </nav>
       <div class="container">
         <div class="row">
-            <!--Texto-->
-            <div class="col-md-6 text-center p-3">
-                <h4 class="p-3">Contacto</h4>
-                <p>En Kalandra encontrarás distintas opciones para cultivar tu pasión, encargar el mejor regalo o, simplemente, decorar tus espacios con imágenes que te hagan sonreír e inspirarte cada día.</p>
-                <ul>
-                    <li><strong>Talleres de encuadernación:</strong> grupales o individuales, presenciales o virtuales... ¡Tú eliges lo que más te acomode!</li>
-                    <li><strong>Talleres de manualidades:</strong> lettering, acuarela, bordado... Cuéntame tu idea para encontrar el mejor taller para ti.</li>
-                    <li><strong>Productos de stock:</strong> Revisa la selección que he ido preparando con mucho, mucho amor <3</li>
-                    <li><strong>Productos personalizados:</strong> Rellena el formulario de cotización para encargar tu encuadernación completamente personalizada, llevemos al papel la idea que tienes en mente.</li>
-                    <li><strong>Ilustraciones:</strong> Me especializo en ilustración y lettering digital y análoga en acuarela, cuéntame tu idea para que podamos empezar a plasmarla.</li>
-                </ul>
-            </div>
+    <!--Form de contacto-->
+        <div class="col-md-6 text-center p-3">
+            <h4 class="p-3">Contacto</h4>
+            <form method="post" name="formdecontacto">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="nombre" placeholder="Nombre" class="form-control mb-3">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="correo" placeholder="Correo" class="form-control mb-3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="pais" placeholder="País" class="form-control mb-3">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="ciudad" placeholder="Ciudad" class="form-control mb-3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <select id="opciones" name="opciones" class="form-select mb-3">
+                            <option value="ambos">Talleres</option>
+                            <option value="personalizados">Pedidos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <textarea cols="30" rows="5" placeholder="Preguntas, comentarios..." class="form-control mb-3"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="submit" value="Enviar" id="enviar" class="btn btn-primary">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="reset" value="Borrar" id="borrar" class="btn btn-secondary">
+                    </div>
+                </div>
+            </form>
+            
+        </div>
             <!--Foto belga Frida-->
             <div class="col-md-6 p-3">
                 <img src="../assets/belgafrida.jpg" class="img-fluid" alt="Libreta artesanal de Frida Kahlo en encuadernación belga">
