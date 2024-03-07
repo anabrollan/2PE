@@ -1,4 +1,4 @@
-.navbar {
+body {
     background-color: #FFEBC0;
 }
 
@@ -7,7 +7,7 @@
     height: auto;
 }
 
-.img-fluid {
-    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
-    height: auto; /* Esto garantiza que la imagen conserve su proporción */
-}
+ul {
+    list-style: none;
+  }
+  
